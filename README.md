@@ -35,22 +35,6 @@ El objetivo principal es demostrar la conexión entre un **frontend moderno (Rea
 
 ---
 
-## 📂 Estructura del Proyecto
-
-api-crud-sqlite/
-├── src/
-│ ├── db/
-│ │ └── database.js # Configuración de la base de datos SQLite
-│ ├── routes/
-│ │ └── productos.routes.js # Definición de rutas CRUD
-│ ├── controllers/
-│ │ └── productos.controller.js # Lógica de controladores
-│ ├── models/
-│ │ └── producto.model.js # Modelo de datos
-│ └── index.js # Punto de entrada del servidor
-├── package.json
-├── package-lock.json
-└── README.md # Este archivo
 ---
 
 ## 🧪 Endpoints Disponibles
