@@ -78,6 +78,15 @@ app.get("/productos/categoria/:categoria", (req, res) => {
   });
 });
 
+// READ - Obtener todas las categorías únicas
+app.get("/categorias", (req, res) => {
+  const query = "SELECT DISTINCT categoria FROM productos";
+  db.all(query, [], (err, rows) => {
+    if (err) return res.status(500).json({ error: err.message });
+    res.json(rows.map(row => row.categoria));
+  });
+});
+
 
 // Iniciar servidor
 app.listen(3000, () =>
